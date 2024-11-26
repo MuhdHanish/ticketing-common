@@ -1,5 +1,6 @@
 {
-  "name": "@hanishdev-ticketing/common",
+  "name": "@hanshidev-ticketing/common",
+  "description": "Common utilities for ticketing.dev project",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,5 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "publishConfig": {
+    "access": "public"
+  }
 }
