@@ -18,6 +18,18 @@ export const errorHandler = (
         error = err.message || error;
     }
 
+    if (status >= 500) {
+        console.error(`
+        [ERROR] ${new Date().toISOString()}
+        Method: ${req.method}
+        Path: ${req.path}
+        Status: ${status}
+        Message: ${message}
+        Error: ${error}
+    `);
+    }
+
+
     res.status(status).send(
         err instanceof CustomHTTPError ?
             { message } :
