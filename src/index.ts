@@ -6,3 +6,6 @@ export * from "./middlewares";
 
 // Events Handlers (Base, Events...)
 export * from "./event-handlers";
+
+// Types
+export * from "./types";
