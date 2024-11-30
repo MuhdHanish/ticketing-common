@@ -7,5 +7,6 @@ export interface TickUpdatedEvent {
         title: string;
         price: number;
         user: string;
+        version: number;
     }
 }

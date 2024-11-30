@@ -12,5 +12,6 @@ export interface OrderCreatedEvent {
         };
         expiresAt: string;
         user: string;
+        version: number;
     }
 }   
